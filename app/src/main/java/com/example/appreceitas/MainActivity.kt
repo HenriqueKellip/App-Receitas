@@ -7,6 +7,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.FirebaseApp;
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var pass: EditText
     lateinit var loginButton: Button
     lateinit var cadastroButton: Button
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
