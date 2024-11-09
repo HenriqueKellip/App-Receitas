@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppReceitas</string>
+    <string name="email">Email</string>
 </resources>

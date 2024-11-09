@@ -11,7 +11,7 @@ class TelaPrincipal : AppCompatActivity() {
         setContentView(R.layout.tela_principal)
 
 
-        val itemList = listOf("pizza","hamburguer","strogonoff")
+        val itemList = listOf("pizza","hamburguer","strogonoff","sadlksajd","sadlksajd","sadlksajd")
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
