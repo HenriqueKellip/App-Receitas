@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthRegistrar
+import com.google.firebase.auth.auth
 
 class MainActivity : AppCompatActivity() {
 
@@ -56,7 +58,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
         cadastroButton.setOnClickListener {
             // Redireciona para a tela de cadastro
             Toast.makeText(this, "Botão de cadastro clicado", Toast.LENGTH_SHORT).show()
@@ -64,4 +65,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    //verifica se o usuario ja esta logado *serve para nao precisar logar toda vez que abre o app*
+//    override fun onStart() {
+//        super.onStart()
+//
+//        val usuarioAtual = FirebaseAuth.getInstance().currentUser
+//
+//        if (usuarioAtual != null){
+//            val intent = Intent(applicationContext, TelaPrincipal::class.java)
+//            startActivity(intent)
+//    }
+//    }
 }
