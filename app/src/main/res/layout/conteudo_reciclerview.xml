@@ -7,8 +7,8 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="273dp"
-        android:layout_height="192dp"
+        android:layout_width="348dp"
+        android:layout_height="236dp"
         android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -18,19 +18,20 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="103dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="268dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
         android:text="titulo da receita"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="46dp"
-        android:layout_height="37dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="3dp"
         android:backgroundTint="#00FFFFFF"

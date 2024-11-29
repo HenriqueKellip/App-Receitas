@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nome da Receita -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:text="Hungry App"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.283"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/sairbutton"
+                android:layout_width="66dp"
+                android:layout_height="54dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sair" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Receita"
+            android:inputType="textCapWords" />
+
+        <!-- Ingredientes -->
+        <EditText
+            android:id="@+id/etIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Ingredientes (separados por vírgula)"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp" />
+
+        <!-- Modo de Preparo -->
+        <EditText
+            android:id="@+id/etPreparationMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Modo de Preparo"
+            android:inputType="textMultiLine"
+            android:minHeight="150dp" />
+
+        <!-- Tempo de Preparo -->
+        <EditText
+            android:id="@+id/etPreparationTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo de Preparo (em minutos)"
+            android:inputType="number" />
+
+        <!-- Botão para Salvar -->
+
+        <Button
+            android:id="@+id/btnSaveRecipe"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF0000"
+            android:text="Salvar Receita"
+            android:textSize="20dp"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+
+</ScrollView>
